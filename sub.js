@@ -1,7 +1,7 @@
 
-function sub(a, b) {
+var sub = function (a, b) {
     return a - b;
 }
 
 
-console.log(sub(2, 4));
+module.exports = sub;

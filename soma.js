@@ -1,6 +1,7 @@
-function soma(a, b) {
+/*criando um modulo*/
+var soma = function (a, b) {
     return a + b;
 }
 
 
-console.log(soma(2, 4));
+module.exports = soma;

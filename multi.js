@@ -1,7 +1,7 @@
 
-function multi(a, b) {
+var multi = function (a, b) {
     return a * b;
 }
 
 
-console.log(multi(2, 4));
+module.exports = multi;
