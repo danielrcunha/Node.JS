@@ -7,11 +7,15 @@ app.get("/", function (req, res) {
 
 app.get("/sobre", function (req, res) {
     res.send("Minha pagina sobre");
-})
+});
 
 app.get("/blog", function (req, res) {
     res.send("Bem-vindo ao meu blog!");
-})
+});
+
+app.get("/ola", function (req, res) {
+    res.send("Ola");
+});
 
 app.listen(8080, function () {
     console.log("Servidor Rodando na URL http://localhost:8080");
