@@ -23,6 +23,14 @@ const Postagem = sequelize.define('postagens', {
     }
 })
 
+//usado p/ criar um registro na TB
+/* Postagem.create({
+    titulo: "Um teste",
+    conteudo: "Teste teste teste teste teste"
+})
+*/
+
+
 //foi usando para criar a tabela
 /*Postagem.sync({ force: true })*/
 
@@ -44,5 +52,14 @@ const Usuario = sequelize.define('usuarios', {
 
 })
 
-Usuario.sync({ force: true })
+//Usuario.sync({ force: true })
+/*logo após criar a TB, comentar a linha para
+que o sicrelize não crie a mesma TB novemanete*/
 
+/*inserindo usuarios*/
+/*Usuario.create({
+    nome: "Joelma",
+    sobrenome: "Silveira",
+    idade: 39,
+    email: "jo@gmail.com"
+})*/
