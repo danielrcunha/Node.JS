@@ -1,7 +1,7 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const handlebars = require('express-handlebars')
-const Sequelize = require('sequelize')
+const handlebars = require('express-handlebars');
+const Sequelize = require('sequelize');
 
 
 /*conf*/
@@ -22,9 +22,10 @@ const sequelize = new Sequelize('test', 'root', 'root',
 
 //rotas
 app.get('/cad', function (req, res) {
-    //res.send('Rota de Cadastro de Posts!!!')
+    //res.send('Rota de Cadastro de Posts!');
     res.render('formulario.handlebars')
 })
+
 
 
 app.listen(8080, function () {
