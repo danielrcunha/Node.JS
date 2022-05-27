@@ -7,4 +7,4 @@ http.createServer(function (req, res) {
     res.end("Ola, voce esta conectado!!!");
 }).listen(8080);
 
-console.log("O Servidor Rodando");
+console.log("O Servidor Rodando!");

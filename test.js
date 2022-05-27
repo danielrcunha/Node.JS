@@ -2,28 +2,28 @@
 /*Passando 5 parametros, database, usuario, senha, host e dialect*/
 
 /*tirei daqui e coloquei no arquivo index.js*/
-const Sequelize = require('sequelize')
+/*const Sequelize = require('sequelize')
 const sequelize = new Sequelize('test', 'root', 'root',
     {
         host: "localhost",
         dialect: 'mysql'
-    })
+    })*/
 
-sequelize.authenticate().then(function () {
+/*sequelize.authenticate().then(function () {
     console.log("Conectado com sucesso ao BD!")
 }).catch(function (erro) {
     console.log("Falha ao se conectar ao BD: " + erro)
-})
+})*/
 
 /*aula 18 - criando um model para criar tabela no BD*/
-const Postagem = sequelize.define('postagens', {
+/*const Postagem = sequelize.define('postagens', {
     titulo: {
         type: Sequelize.STRING
     },
     conteudo: {
         type: Sequelize.TEXT
     }
-})
+})*/
 
 //usado p/ criar um registro na TB
 /* Postagem.create({
@@ -37,7 +37,7 @@ const Postagem = sequelize.define('postagens', {
 /*Postagem.sync({ force: true })*/
 
 //criando outra TB usuario com mais campos
-const Usuario = sequelize.define('usuarios', {
+/*const Usuario = sequelize.define('usuarios', {
     nome: {
         type: Sequelize.STRING
     },
@@ -52,7 +52,7 @@ const Usuario = sequelize.define('usuarios', {
     }
 
 
-})
+})*/
 
 //Usuario.sync({ force: true })
 /*logo após criar a TB, comentar a linha para
